@@ -1,24 +1,54 @@
 <template>
- <div class="hello">{{msg}}</div>
- <index-header/>
+	<div class="root">
+		
+	    <index-header/> 
+		<index-swiper/>
+
+		</div>
+		
+	</div>
 </template>
 
-<script>
-import Header from "./header.vue";	
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    },
-    components:{
-    	"index-header" : header
-    }
-  }
-}
+<script type="text/javascript">
+	import header from "./Header.vue" ;
+	import swiper from "./Swiper.vue"
+	
+	export default{
+		
+		data() {
+			return {
+				
+			}
+		},
+		components:{
+			"index-header":header,
+			"index-swiper":swiper
+			
+		}
+	}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  .hello{background: red}
+<style>
+
+   html{
+   	font-size:13.333vw;
+   }
+   body{
+   	max-width: 540px;
+   	min-width: 320px;
+   }
+  .header{
+  	height: 2.12rem;
+  	width: 100%;
+  	background: red;
+  	font-size:0.16rem;
+  }
+
+  
+
+  
+  
+  
+
+  
 </style>
